@@ -1,0 +1,23 @@
+﻿<Window x:Class="Tarea2Aplicada1.UI.Ejercicio5cap5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea2Aplicada1.UI"
+        mc:Ignorable="d"
+        Title="Ejercicio5cap5" Height="450" Width="800">
+    <Grid>
+
+        <StackPanel Orientation="Vertical" Margin="15">
+            <Label Content="Ingrese el numero que desea convertir a letras: "/>
+            <StackPanel Orientation="Horizontal" Margin="0,10">
+                <TextBox x:Name="ConversionTextBox" Height="30" Width="60"/>
+                <Button x:Name="ConversionButton" Content="Confirmar" Click="ConversionButton_Click" Margin="40,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="0, 90">
+                <TextBox x:Name="ResultadoTextBox" Height="70" IsReadOnly="True"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

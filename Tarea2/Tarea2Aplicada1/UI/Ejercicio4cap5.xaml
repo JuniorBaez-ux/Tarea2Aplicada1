@@ -1,0 +1,24 @@
+﻿<Window x:Class="Tarea2Aplicada1.UI.Ejercicio4cap5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea2Aplicada1.UI"
+        mc:Ignorable="d"
+        Title="Ejercicio4cap5" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="15">
+            <StackPanel>
+                <Label Content="Inserte el numero al cual desea calcular el factorial: "/>
+                <StackPanel Orientation="Horizontal" Margin="0,10">
+                    <TextBox x:Name="FactorialTextBox" Height="20" Width="60"/>
+                    <Button x:Name="FactorialButton" Content="Confirmar" Margin="30,0" Click="FactorialButton_Click"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Margin="0, 80">
+                <TextBox x:Name="ResultadoTextBox" Height="60" IsReadOnly="True"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
